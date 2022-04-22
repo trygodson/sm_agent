@@ -51,7 +51,7 @@ class _RootAppState extends State<RootApp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: appBgColor,
+      // backgroundColor: appBgColor,
       body: getBarPage(),
       // bottomNavigationBar: getBottomBar1()
       floatingActionButton: getBottomBar(),

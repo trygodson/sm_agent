@@ -130,7 +130,9 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Text(
                   "See all",
-                  style: TextStyle(fontSize: 14, color: darker),
+                  style: TextStyle(
+                      fontSize: 14,
+                      color: Theme.of(context).colorScheme.primary),
                 ),
               ],
             ),
