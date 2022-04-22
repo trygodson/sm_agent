@@ -19,31 +19,31 @@ class _RootAppState extends State<RootApp> {
     {
       "icon": Icons.home_outlined,
       "active_icon": Icons.home_rounded,
-      "page": HomePage(),
+      "page": const HomePage(),
       "title": ""
     },
     {
       "icon": Icons.search_outlined,
       "active_icon": Icons.search,
-      "page": ExplorePage(),
+      "page": const ExplorePage(),
       "title": ""
     },
     {
       "icon": Icons.favorite_border,
       "active_icon": Icons.favorite_outlined,
-      "page": HomePage(),
+      "page": const HomePage(),
       "title": ""
     },
     {
       "icon": Icons.forum_outlined,
       "active_icon": Icons.forum_rounded,
-      "page": HomePage(),
+      "page": const HomePage(),
       "title": ""
     },
     {
       "icon": Icons.settings_outlined,
       "active_icon": Icons.settings_rounded,
-      "page": HomePage(),
+      "page": const HomePage(),
       "title": ""
     },
   ];
@@ -88,7 +88,7 @@ class _RootAppState extends State<RootApp> {
               color: shadowColor.withOpacity(0.1),
               blurRadius: 1,
               spreadRadius: 1,
-              offset: Offset(0, 1))
+              offset: const Offset(0, 1))
         ],
       ),
       child: Row(

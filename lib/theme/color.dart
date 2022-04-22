@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 
-const primary = Color(0xFF3498db);
-const secondary = Color(0xFF2ecc71);
-
+const primary = Color.fromARGB(255, 23, 29, 50);
+const secondary = Color(0xFFACB6C5);
+const lite = Color(0xfff5f7f9);
+const grey = Color.fromARGB(207, 229, 235, 245);
+const dimGrey = Color(0xff787e8a);
 const darker = Color(0xFF3E4249);
 const cardColor = Colors.white;
 const mainColor = Color(0xFF000000);
@@ -22,4 +24,15 @@ const orange = Color(0xFFFFC8A2);
 const sky = Color(0xFFABDEE6);
 const blue = Color(0xFF509BE4);
 
-const listColors = [green, purple, yellow, orange, sky, secondary, red, blue, pink, yellow,];
+const listColors = [
+  green,
+  purple,
+  yellow,
+  orange,
+  sky,
+  secondary,
+  red,
+  blue,
+  pink,
+  yellow,
+];

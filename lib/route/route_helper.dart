@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:smart_agent/screens/root.dart';
+import 'package:smart_agent/screens/splash_screen.dart';
 
 class RouteHelper {
   static const String INITIAL_ROUTE = '/';
@@ -27,7 +27,7 @@ class RouteHelper {
   static List<GetPage> routes = [
     GetPage(
       name: INITIAL_ROUTE,
-      page: () => RootApp(),
+      page: () => SplashScreenPage(),
     ),
   ];
 }
