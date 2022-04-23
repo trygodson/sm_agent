@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_agent/screens/dashboard/index.dart';
 import 'package:smart_agent/screens/explore.dart';
 import 'package:smart_agent/theme/color.dart';
 import 'package:smart_agent/utils/dimensions.dart';
@@ -19,19 +20,19 @@ class _RootAppState extends State<RootApp> {
     {
       "icon": Icons.home_outlined,
       "active_icon": Icons.home_rounded,
-      "page": const HomePage(),
+      "page": Dashboard(),
       "title": ""
     },
     {
       "icon": Icons.search_outlined,
       "active_icon": Icons.search,
-      "page": const ExplorePage(),
+      "page": const HomePage(),
       "title": ""
     },
     {
       "icon": Icons.favorite_border,
       "active_icon": Icons.favorite_outlined,
-      "page": const HomePage(),
+      "page": const ExplorePage(),
       "title": ""
     },
     {

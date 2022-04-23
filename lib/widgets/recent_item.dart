@@ -4,8 +4,15 @@ import 'package:smart_agent/theme/color.dart';
 import 'custom_image.dart';
 
 class RecentItem extends StatelessWidget {
-  RecentItem({Key? key, required this.data}) : super(key: key);
+  RecentItem(
+      {Key? key,
+      required this.data,
+      this.forcedheight = 100,
+      this.forcedWidth = 100})
+      : super(key: key);
   final data;
+  final double forcedheight;
+  final double forcedWidth;
 
   @override
   Widget build(BuildContext context) {
@@ -29,6 +36,8 @@ class RecentItem extends StatelessWidget {
           CustomImage(
             data["image"],
             radius: 20,
+            height: forcedheight,
+            width: forcedWidth,
           ),
           SizedBox(
             width: 15,

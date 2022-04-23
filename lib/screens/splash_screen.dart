@@ -91,10 +91,12 @@ class _SplashScreenPageState extends State<SplashScreenPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
-            Text('Smart Agent',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                    fontSize: 26, color: primary, fontWeight: FontWeight.w400)),
+            Text(
+              'Smart Agent',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                  fontSize: 26, color: primary, fontWeight: FontWeight.w400),
+            ),
           ],
         ),
       ),

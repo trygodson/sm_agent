@@ -1,8 +1,11 @@
 import 'package:get/get.dart';
+import 'package:smart_agent/screens/dashboard/index.dart';
+import 'package:smart_agent/screens/myhouse/index.dart';
 import 'package:smart_agent/screens/splash_screen.dart';
 
 class RouteHelper {
   static const String INITIAL_ROUTE = '/';
+  static const String MY_HOUSE_ROUTE = '/myhouse';
 
   // static String getSplashPage() {
   //   return "$splashScreen";
@@ -28,6 +31,12 @@ class RouteHelper {
     GetPage(
       name: INITIAL_ROUTE,
       page: () => SplashScreenPage(),
+      // page: () => Dashboard(),
+    ),
+    GetPage(
+      name: MY_HOUSE_ROUTE,
+      page: () => MyHouse(),
+      // page: () => Dashboard(),
     ),
   ];
 }

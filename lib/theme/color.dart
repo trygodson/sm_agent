@@ -20,6 +20,7 @@ const green = Color(0xFFb2e1b5);
 const pink = Color(0xFFf5bde8);
 const purple = Color(0xFFd9bcff);
 const red = Color(0xFFff4b60);
+const darkRed = Color(0xFF610404);
 const orange = Color(0xFFFFC8A2);
 const sky = Color(0xFFABDEE6);
 const blue = Color(0xFF509BE4);

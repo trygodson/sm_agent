@@ -6,6 +6,7 @@ import 'package:smart_agent/utils/dimensions.dart';
 import 'package:smart_agent/widgets/category_item.dart';
 import 'package:smart_agent/widgets/custom_image.dart';
 import 'package:smart_agent/widgets/custom_textbox.dart';
+import 'package:smart_agent/widgets/header.dart';
 import 'package:smart_agent/widgets/icon_box.dart';
 import 'package:smart_agent/widgets/property_item.dart';
 import 'package:smart_agent/widgets/recent_item.dart';

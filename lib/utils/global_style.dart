@@ -33,7 +33,7 @@ class GlobalStyle {
       TextStyle(color: lite, fontSize: 11, fontWeight: FontWeight.w300);
 
   static const TextStyle interestTitleStyle =
-      TextStyle(color: primary, fontSize: 12, fontWeight: FontWeight.w500);
+      TextStyle(color: primary, fontSize: 14, fontWeight: FontWeight.w600);
 
   static const TextStyle boldStyle =
       TextStyle(color: primary, fontSize: 14, fontWeight: FontWeight.w500);
