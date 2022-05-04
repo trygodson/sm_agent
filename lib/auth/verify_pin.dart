@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:line_icons/line_icons.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/theme/color.dart';
 
 class VerifyPinPage extends StatefulWidget {
   const VerifyPinPage({Key? key}) : super(key: key);

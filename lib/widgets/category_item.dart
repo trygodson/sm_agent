@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/theme/color.dart';
 
 class CategoryItem extends StatelessWidget {
-  CategoryItem(
+  const CategoryItem(
       {Key? key, required this.data, this.selected = false, this.onTap})
       : super(key: key);
   final data;
@@ -16,8 +16,8 @@ class CategoryItem extends StatelessWidget {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 500),
         curve: Curves.fastOutSlowIn,
-        padding: EdgeInsets.fromLTRB(5, 20, 5, 0),
-        margin: EdgeInsets.only(right: 10),
+        padding: const EdgeInsets.fromLTRB(5, 20, 5, 0),
+        margin: const EdgeInsets.only(right: 10),
         width: 90,
         height: 90,
         decoration: BoxDecoration(
@@ -28,7 +28,7 @@ class CategoryItem extends StatelessWidget {
               color: shadowColor.withOpacity(0.1),
               spreadRadius: .5,
               blurRadius: .5,
-              offset: Offset(0, 1), // changes position of shadow
+              offset: const Offset(0, 1), // changes position of shadow
             ),
           ],
         ),
@@ -36,7 +36,7 @@ class CategoryItem extends StatelessWidget {
           children: [
             Icon(data["icon"],
                 size: 25, color: selected ? Colors.white : Colors.black),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Expanded(

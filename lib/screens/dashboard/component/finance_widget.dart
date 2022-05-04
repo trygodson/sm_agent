@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:intl/intl.dart';
-import 'package:smart_agent/utils/dimensions.dart';
+import 'package:dweller/utils/dimensions.dart';
 
 class FinanceWidget extends StatelessWidget {
   const FinanceWidget({
@@ -15,7 +15,7 @@ class FinanceWidget extends StatelessWidget {
     // ignore: unnecessary_new
     final value = new NumberFormat("#,##0.00", "en_US");
 
-    return Container(
+    return SizedBox(
         width: Dimensions.screenWidth,
         child: Row(
             // crossAxisAlignment: CrossAxisAlignment.start,
@@ -24,7 +24,7 @@ class FinanceWidget extends StatelessWidget {
               Container(
                   padding: EdgeInsets.symmetric(
                       horizontal: Dimensions.getProportionalWidth(20)),
-                  child: Container(
+                  child: SizedBox(
                     height: Dimensions.getProportionalWidth(46),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +40,7 @@ class FinanceWidget extends StatelessWidget {
               Container(
                   padding: EdgeInsets.symmetric(
                       horizontal: Dimensions.getProportionalWidth(20)),
-                  child: Container(
+                  child: SizedBox(
                     height: Dimensions.getProportionalWidth(46),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
@@ -56,7 +56,7 @@ class FinanceWidget extends StatelessWidget {
               Container(
                   padding: EdgeInsets.symmetric(
                       horizontal: Dimensions.getProportionalWidth(20)),
-                  child: Container(
+                  child: SizedBox(
                     height: Dimensions.getProportionalWidth(46),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.end,

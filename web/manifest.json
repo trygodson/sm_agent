@@ -1,6 +1,6 @@
 {
-    "name": "smart_agent",
-    "short_name": "smart_agent",
+    "name": "dweller",
+    "short_name": "dweller",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

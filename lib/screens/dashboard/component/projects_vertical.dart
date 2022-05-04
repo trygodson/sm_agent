@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:smart_agent/utils/data.dart';
-import 'package:smart_agent/utils/dimensions.dart';
-import 'package:smart_agent/widgets/header_title_view_more.dart';
-import 'package:smart_agent/widgets/quick_menu_item.dart';
+import 'package:dweller/utils/data.dart';
+import 'package:dweller/utils/dimensions.dart';
+import 'package:dweller/widgets/header_title_view_more.dart';
+import 'package:dweller/widgets/quick_menu_item.dart';
 
 class ProjectVertical extends StatelessWidget {
   List<Map<String, dynamic>> new_orders = [

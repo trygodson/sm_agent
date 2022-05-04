@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/data.dart';
-import 'package:smart_agent/utils/dimensions.dart';
-import 'package:smart_agent/widgets/broker_item.dart';
-import 'package:smart_agent/widgets/company_item.dart';
-import 'package:smart_agent/widgets/custom_textbox.dart';
-import 'package:smart_agent/widgets/icon_box.dart';
-import 'package:smart_agent/widgets/recommend_item.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/data.dart';
+import 'package:dweller/utils/dimensions.dart';
+import 'package:dweller/widgets/broker_item.dart';
+import 'package:dweller/widgets/company_item.dart';
+import 'package:dweller/widgets/custom_textbox.dart';
+import 'package:dweller/widgets/icon_box.dart';
+import 'package:dweller/widgets/recommend_item.dart';
 
 class ExplorePage extends StatefulWidget {
   const ExplorePage({Key? key}) : super(key: key);
@@ -35,7 +35,7 @@ class _ExplorePageState extends State<ExplorePage> {
   getHeader() {
     return Row(
       children: [
-        Expanded(
+        const Expanded(
             child: CustomTextBox(
           hint: "Search",
           prefix: Icon(Icons.search, color: Colors.grey),
@@ -43,7 +43,7 @@ class _ExplorePageState extends State<ExplorePage> {
         SizedBox(
           width: Dimensions.getProportionalWidth(15),
         ),
-        IconBox(
+        const IconBox(
           child: Icon(Icons.filter_list_rounded, color: Colors.white),
           bgColor: secondary,
           radius: 10,
@@ -62,7 +62,7 @@ class _ExplorePageState extends State<ExplorePage> {
         margin: EdgeInsets.only(
             left: Dimensions.getProportionalHeight(15),
             right: Dimensions.getProportionalHeight(15)),
-        child: Text(
+        child: const Text(
           "Matched Properties",
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
         ),
@@ -78,7 +78,7 @@ class _ExplorePageState extends State<ExplorePage> {
         margin: EdgeInsets.only(
             left: Dimensions.getProportionalHeight(15),
             right: Dimensions.getProportionalHeight(15)),
-        child: Text(
+        child: const Text(
           "Companies",
           style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
         ),

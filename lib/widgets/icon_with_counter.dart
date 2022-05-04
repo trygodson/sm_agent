@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/dimensions.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/dimensions.dart';
 
 class IconBtnWithCounter extends StatelessWidget {
   const IconBtnWithCounter({

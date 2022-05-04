@@ -1,16 +1,16 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/data.dart';
-import 'package:smart_agent/utils/dimensions.dart';
-import 'package:smart_agent/widgets/category_item.dart';
-import 'package:smart_agent/widgets/custom_image.dart';
-import 'package:smart_agent/widgets/custom_textbox.dart';
-import 'package:smart_agent/widgets/header.dart';
-import 'package:smart_agent/widgets/icon_box.dart';
-import 'package:smart_agent/widgets/property_item.dart';
-import 'package:smart_agent/widgets/recent_item.dart';
-import 'package:smart_agent/widgets/recommend_item.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/data.dart';
+import 'package:dweller/utils/dimensions.dart';
+import 'package:dweller/widgets/category_item.dart';
+import 'package:dweller/widgets/custom_image.dart';
+import 'package:dweller/widgets/custom_textbox.dart';
+import 'package:dweller/widgets/header.dart';
+import 'package:dweller/widgets/icon_box.dart';
+import 'package:dweller/widgets/property_item.dart';
+import 'package:dweller/widgets/recent_item.dart';
+import 'package:dweller/widgets/recommend_item.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -46,7 +46,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
+                children: const [
                   Text(
                     "Hello!",
                     style: TextStyle(
@@ -92,7 +92,7 @@ class _HomePageState extends State<HomePage> {
                 right: Dimensions.getProportionalHeight(15)),
             child: Row(
               children: [
-                Expanded(
+                const Expanded(
                     child: CustomTextBox(
                   hint: "Search",
                   prefix: Icon(Icons.search, color: Colors.grey),
@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> {
                 SizedBox(
                   width: Dimensions.getProportionalWidth(10),
                 ),
-                IconBox(
+                const IconBox(
                   child: Icon(Icons.filter_list_rounded, color: Colors.white),
                   bgColor: secondary,
                   radius: 10,
@@ -112,7 +112,7 @@ class _HomePageState extends State<HomePage> {
             height: Dimensions.getProportionalHeight(20),
           ),
           Container(
-            margin: EdgeInsets.only(left: 0),
+            margin: const EdgeInsets.only(left: 0),
             child: listCategories(),
           ),
           SizedBox(
@@ -125,7 +125,7 @@ class _HomePageState extends State<HomePage> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
+                const Text(
                   "Popular",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
                 ),
@@ -151,7 +151,7 @@ class _HomePageState extends State<HomePage> {
                 right: Dimensions.getProportionalHeight(15)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children: const [
                 Text(
                   "Recommended",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),
@@ -171,10 +171,10 @@ class _HomePageState extends State<HomePage> {
             height: Dimensions.getProportionalHeight(20),
           ),
           Container(
-            margin: EdgeInsets.only(left: 15, right: 15),
+            margin: const EdgeInsets.only(left: 15, right: 15),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
+              children: const [
                 Text(
                   "Recent",
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.w600),

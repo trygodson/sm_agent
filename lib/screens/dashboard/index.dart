@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/theme/color.dart';
 
 import 'component/body.dart';
 

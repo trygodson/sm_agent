@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/theme/color.dart';
 
 import 'custom_image.dart';
 import 'icon_box.dart';
 
 class PropertyItem extends StatelessWidget {
-  PropertyItem({Key? key, required this.data}) : super(key: key);
+  const PropertyItem({Key? key, required this.data}) : super(key: key);
   final data;
 
   @override
@@ -13,7 +13,7 @@ class PropertyItem extends StatelessWidget {
     return Container(
       width: double.infinity,
       height: 240,
-      margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
+      margin: const EdgeInsets.fromLTRB(0, 0, 0, 5),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(25),
@@ -22,7 +22,7 @@ class PropertyItem extends StatelessWidget {
             color: shadowColor.withOpacity(0.1),
             spreadRadius: .5,
             blurRadius: 1,
-            offset: Offset(0, 1), // changes position of shadow
+            offset: const Offset(0, 1), // changes position of shadow
           ),
         ],
       ),
@@ -55,33 +55,34 @@ class PropertyItem extends StatelessWidget {
                     data["name"],
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+                    style: const TextStyle(
+                        fontSize: 16, fontWeight: FontWeight.w600),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.place_outlined,
                         color: darker,
                         size: 13,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 3,
                       ),
                       Text(
                         data["location"],
-                        style: TextStyle(fontSize: 13, color: darker),
+                        style: const TextStyle(fontSize: 13, color: darker),
                       ),
                     ],
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Text(
                     data["price"],
-                    style: TextStyle(
+                    style: const TextStyle(
                         fontSize: 15,
                         color: primary,
                         fontWeight: FontWeight.w500),

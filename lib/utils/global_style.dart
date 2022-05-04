@@ -4,7 +4,7 @@ This file is used to styling a whole application
  */
 
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/theme/color.dart';
 
 class GlobalStyle {
   static const TextStyle titleStyle =

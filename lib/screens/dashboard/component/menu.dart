@@ -3,8 +3,8 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
 import 'package:intl/intl.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/widgets/menu_card.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/widgets/menu_card.dart';
 
 class Menu extends StatelessWidget {
   const Menu({
@@ -36,14 +36,14 @@ class Menu extends StatelessWidget {
               description:
                   'Raphael is an AI that helps you find a house of your choice',
               press: () => null),
-          GridCard(
+          const GridCard(
               color: purple,
               icon: FontAwesomeIcons.mapMarkerAlt,
               text: 'Know Location',
               description:
                   'Do you know you can know location before packing there or buy any assets',
               press: null),
-          GridCard(
+          const GridCard(
               color: orange,
               icon: FontAwesomeIcons.wallet,
               text: 'Save to Pay',

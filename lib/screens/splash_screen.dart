@@ -9,8 +9,8 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:smart_agent/auth/get_started.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/auth/get_started.dart';
+import 'package:dweller/theme/color.dart';
 
 class SplashScreenPage extends StatefulWidget {
   const SplashScreenPage({Key? key}) : super(key: key);

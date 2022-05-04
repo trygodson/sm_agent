@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/screens/dashboard/component/projects_vertical.dart';
-import 'package:smart_agent/screens/myhouse/component/summary_card.dart';
-import 'package:smart_agent/utils/data.dart';
-import 'package:smart_agent/utils/dimensions.dart';
-import 'package:smart_agent/widgets/community_item.dart';
-import 'package:smart_agent/widgets/header.dart';
-import 'package:smart_agent/widgets/header_title_view_more.dart';
-import 'package:smart_agent/widgets/quick_menu_item.dart';
-import 'package:smart_agent/widgets/recent_item.dart';
+import 'package:dweller/screens/dashboard/component/projects_vertical.dart';
+import 'package:dweller/screens/myhouse/component/summary_card.dart';
+import 'package:dweller/utils/data.dart';
+import 'package:dweller/utils/dimensions.dart';
+import 'package:dweller/widgets/community_item.dart';
+import 'package:dweller/widgets/header.dart';
+import 'package:dweller/widgets/header_title_view_more.dart';
+import 'package:dweller/widgets/quick_menu_item.dart';
+import 'package:dweller/widgets/recent_item.dart';
 
 class Body extends StatelessWidget {
   const Body({Key? key}) : super(key: key);
@@ -30,8 +30,8 @@ Widget content() {
   return SingleChildScrollView(
     child: Column(
       children: [
-        Header(),
-        SummaryCard(
+        const Header(),
+        const SummaryCard(
           amount: 1000000,
         ),
         SingleChildScrollView(
@@ -44,13 +44,13 @@ Widget content() {
             ),
           ),
         ),
-        SizedBox(height: 15),
+        const SizedBox(height: 15),
         Container(
           padding: EdgeInsets.symmetric(
               horizontal: Dimensions.getProportionalWidth(20)),
           child: SectionTitle(title: 'Community Buzz', press: () {}),
         ),
-        SizedBox(height: 15),
+        const SizedBox(height: 15),
         listRecent()
       ],
     ),

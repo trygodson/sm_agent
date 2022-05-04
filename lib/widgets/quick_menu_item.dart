@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/dimensions.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/dimensions.dart';
 
 class QuickMenuItem extends StatelessWidget {
-  QuickMenuItem({
+  const QuickMenuItem({
     Key? key,
     required this.data,
     this.onTap,
@@ -22,8 +22,8 @@ class QuickMenuItem extends StatelessWidget {
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 500),
         curve: Curves.fastOutSlowIn,
-        padding: EdgeInsets.fromLTRB(5, 20, 5, 0),
-        margin: EdgeInsets.only(right: 10),
+        padding: const EdgeInsets.fromLTRB(5, 20, 5, 0),
+        margin: const EdgeInsets.only(right: 10),
         width: Dimensions.getProportionalHeight(100),
         height: Dimensions.getProportionalHeight(100),
         decoration: BoxDecoration(
@@ -34,7 +34,7 @@ class QuickMenuItem extends StatelessWidget {
               color: shadowColor.withOpacity(0.1),
               spreadRadius: .5,
               blurRadius: .5,
-              offset: Offset(0, 1), // changes position of shadow
+              offset: const Offset(0, 1), // changes position of shadow
             ),
           ],
         ),
@@ -49,7 +49,7 @@ class QuickMenuItem extends StatelessWidget {
                       size: Dimensions.getProportionalHeight(18),
                       color: iconColor)),
             ),
-            SizedBox(
+            const SizedBox(
               height: 5,
             ),
             Expanded(
@@ -58,7 +58,7 @@ class QuickMenuItem extends StatelessWidget {
                 textAlign: TextAlign.center,
                 // maxLines: 1,
                 // overflow: TextOverflow.ellipsis,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 15,
                   color: darker,
                   fontWeight: FontWeight.bold,

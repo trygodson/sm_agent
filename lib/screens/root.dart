@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/screens/dashboard/index.dart';
-import 'package:smart_agent/screens/explore.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/dimensions.dart';
-import 'package:smart_agent/widgets/bottombar_item.dart';
+import 'package:dweller/screens/dashboard/index.dart';
+import 'package:dweller/screens/explore.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/dimensions.dart';
+import 'package:dweller/widgets/bottombar_item.dart';
 
 import 'home.dart';
 

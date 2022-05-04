@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
-import 'package:smart_agent/screens/chat/chat.dart';
-import 'package:smart_agent/screens/chat/index.dart';
-import 'package:smart_agent/screens/chatmessage/chatmessage.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/screens/chat/chat.dart';
+import 'package:dweller/screens/chat/index.dart';
+import 'package:dweller/screens/chatmessage/chatmessage.dart';
+import 'package:dweller/theme/color.dart';
 
 var profile = "https://avatars.githubusercontent.com/u/86506519?v=4";
 
@@ -144,7 +144,7 @@ List otherMenus = [
     "name": "Connect with Neighbour",
     "icon": FontAwesomeIcons.userFriends,
     'color': primary,
-    'page': () => Get.to(ChatScreen())
+    'page': () => Get.to(const ChatScreen())
   },
   {
     "name": "Find Roommate",

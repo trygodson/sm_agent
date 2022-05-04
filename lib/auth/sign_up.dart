@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/auth/verify_pin.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/global_style.dart';
+import 'package:dweller/auth/verify_pin.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/global_style.dart';
 
 class SignUpPage extends StatefulWidget {
   const SignUpPage({Key? key}) : super(key: key);

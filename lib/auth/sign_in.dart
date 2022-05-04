@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/auth/forot_password.dart';
-import 'package:smart_agent/auth/sign_up.dart';
-import 'package:smart_agent/screens/root.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/global_style.dart';
+import 'package:dweller/auth/forot_password.dart';
+import 'package:dweller/auth/sign_up.dart';
+import 'package:dweller/screens/root.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/global_style.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 class SignInPage extends StatefulWidget {
   const SignInPage({Key? key}) : super(key: key);
@@ -15,6 +16,9 @@ class SignInPage extends StatefulWidget {
 class _SignInPageState extends State<SignInPage> {
   final TextEditingController _etEmail = TextEditingController();
   final TextEditingController _etPassword = TextEditingController();
+  String fcmToken = '';
+  late FirebaseMessaging messaging;
+
   bool _obscureText = true;
   IconData _iconVisible = Icons.visibility_off;
   void _toggleObscureText() {
@@ -26,6 +30,14 @@ class _SignInPageState extends State<SignInPage> {
         _iconVisible = Icons.visibility;
       }
     });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+
+    messaging = FirebaseMessaging.instance;
+    messaging.getToken().then((value) => fcmToken = value.toString());
   }
 
   @override

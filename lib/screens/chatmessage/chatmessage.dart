@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/theme/color.dart';
 
 class MessageScreen extends StatelessWidget {
-  MessageScreen({Key? key});
+  const MessageScreen({Key? key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class MessageScreen extends StatelessWidget {
     final theme = Theme.of(context);
     final dark = theme.brightness == Brightness.dark;
     return PreferredSize(
-      preferredSize: Size.square(kToolbarHeight),
+      preferredSize: const Size.square(kToolbarHeight),
       child: Container(
         height: 90,
         decoration: BoxDecoration(
@@ -26,7 +26,7 @@ class MessageScreen extends StatelessWidget {
             BoxShadow(
               blurRadius: 5,
               color: primary.withOpacity(.24),
-              offset: Offset(0, 4),
+              offset: const Offset(0, 4),
             )
           ],
         ),
@@ -37,9 +37,9 @@ class MessageScreen extends StatelessWidget {
             Container(
               height: 90,
               width: 90,
-              padding: EdgeInsets.only(top: 15, right: 17),
+              padding: const EdgeInsets.only(top: 15, right: 17),
               child: IconButton(
-                icon: Icon(
+                icon: const Icon(
                   Icons.arrow_back_ios,
                   size: 22,
                   color: primary,
@@ -48,10 +48,10 @@ class MessageScreen extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 15),
+              padding: const EdgeInsets.only(top: 15),
               child: SizedBox(
                 width: MediaQuery.of(context).size.width / 2,
-                child: Text(
+                child: const Text(
                   'group one',
                   maxLines: 1,
                   textAlign: TextAlign.center,
@@ -65,8 +65,8 @@ class MessageScreen extends StatelessWidget {
             Container(
               width: 90,
               height: 90,
-              padding: EdgeInsets.only(top: 15),
-              child: Icon(Icons.more_horiz),
+              padding: const EdgeInsets.only(top: 15),
+              child: const Icon(Icons.more_horiz),
             ),
           ],
         ),
@@ -76,7 +76,7 @@ class MessageScreen extends StatelessWidget {
 
   Widget body(context) {
     return Container(
-      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
+      padding: const EdgeInsets.fromLTRB(10, 0, 10, 10),
       color: Theme.of(context).canvasColor,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -112,31 +112,31 @@ class MessageScreen extends StatelessWidget {
     double marginL = 25;
     double marginR = 15;
     final mWidth = MediaQuery.of(context).size.width;
-    final width = null;
+    const width = null;
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.end,
       children: [
         Container(
-          margin: EdgeInsets.all(10),
+          margin: const EdgeInsets.all(10),
           padding: EdgeInsets.fromLTRB(marginL, 10, marginR, 10),
           decoration: BoxDecoration(
             color: primary,
             borderRadius: BorderRadius.circular(10),
           ),
-          child: Container(
+          child: SizedBox(
             width: width,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 ...[
-                  Text(
+                  const Text(
                     "Godson",
                     style: TextStyle(color: Colors.white),
                   ),
-                  Container(margin: EdgeInsets.only(top: 5))
+                  Container(margin: const EdgeInsets.only(top: 5))
                 ],
-                Text(
+                const Text(
                   'hello',
                   style: TextStyle(
                     color: Colors.white,
@@ -152,24 +152,24 @@ class MessageScreen extends StatelessWidget {
   }
 
   Widget messageItemComponentL(context) {
-    final group = true;
+    const group = true;
     double marginL = 15;
     double marginR = 25;
     final mWidth = MediaQuery.of(context).size.width;
     // final width = mWidth / 1.3;
-    final width = null;
+    const width = null;
 
     return Row(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Container(
-          margin: EdgeInsets.all(10),
+          margin: const EdgeInsets.all(10),
           padding: EdgeInsets.fromLTRB(marginL, 10, marginR, 10),
           decoration: BoxDecoration(
             color: Colors.grey[200],
             borderRadius: BorderRadius.circular(10),
           ),
-          child: Container(
+          child: SizedBox(
             width: width,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -179,9 +179,9 @@ class MessageScreen extends StatelessWidget {
                     "David",
                     style: TextStyle(color: Colors.grey[800]),
                   ),
-                  Container(margin: EdgeInsets.only(top: 5))
+                  Container(margin: const EdgeInsets.only(top: 5))
                 ],
-                Text(
+                const Text(
                   'hello',
                   style: TextStyle(
                     color: Colors.black,
@@ -199,7 +199,7 @@ class MessageScreen extends StatelessWidget {
   Widget createMessageInputComponent(context) {
     final messageController = TextEditingController();
     return Container(
-      padding: EdgeInsets.fromLTRB(15, 1, 5, 1),
+      padding: const EdgeInsets.fromLTRB(15, 1, 5, 1),
       child: Row(
         mainAxisSize: MainAxisSize.max,
         children: <Widget>[
@@ -207,7 +207,7 @@ class MessageScreen extends StatelessWidget {
             flex: 1,
             child: TextField(
               controller: messageController,
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 18,
                 fontFamily: 'Roboto',
                 fontWeight: FontWeight.w400,
@@ -245,7 +245,7 @@ class MessageScreen extends StatelessWidget {
         //     ))
         IconButton(
       color: primary,
-      icon: Icon(Icons.send),
+      icon: const Icon(Icons.send),
       onPressed: () {
         // messageController.clear();
       },

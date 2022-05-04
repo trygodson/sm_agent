@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:smart_agent/screens/dashboard/index.dart';
-import 'package:smart_agent/screens/myhouse/index.dart';
-import 'package:smart_agent/screens/splash_screen.dart';
+import 'package:dweller/screens/dashboard/index.dart';
+import 'package:dweller/screens/myhouse/index.dart';
+import 'package:dweller/screens/splash_screen.dart';
 
 class RouteHelper {
   static const String INITIAL_ROUTE = '/';
@@ -30,12 +30,12 @@ class RouteHelper {
   static List<GetPage> routes = [
     GetPage(
       name: INITIAL_ROUTE,
-      page: () => SplashScreenPage(),
+      page: () => const SplashScreenPage(),
       // page: () => Dashboard(),
     ),
     GetPage(
       name: MY_HOUSE_ROUTE,
-      page: () => MyHouse(),
+      page: () => const MyHouse(),
       // page: () => Dashboard(),
     ),
   ];

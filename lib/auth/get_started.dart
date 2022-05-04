@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/auth/sign_in.dart';
-import 'package:smart_agent/auth/sign_up.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/global_style.dart';
+import 'package:dweller/auth/sign_in.dart';
+import 'package:dweller/auth/sign_up.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/global_style.dart';
 
 class GetStartedPage extends StatefulWidget {
   const GetStartedPage({Key? key}) : super(key: key);

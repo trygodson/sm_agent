@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/dimensions.dart';
-import 'package:smart_agent/utils/global_style.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/dimensions.dart';
+import 'package:dweller/utils/global_style.dart';
 
 class SummaryCard extends StatelessWidget {
   const SummaryCard({
@@ -13,16 +13,16 @@ class SummaryCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final value = new NumberFormat("#,##0.00", "en_US");
+    final value = NumberFormat("#,##0.00", "en_US");
     return Container(
       margin: EdgeInsets.all(Dimensions.getProportionalWidth(20)),
       child: Column(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
-            children: [
+            children: const [
               Padding(
-                padding: const EdgeInsets.all(8.0),
+                padding: EdgeInsets.all(8.0),
                 child: Text(
                   'verified',
                   style: GlobalStyle.interestTitleStyle,
@@ -30,7 +30,7 @@ class SummaryCard extends StatelessWidget {
               )
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Container(
@@ -50,7 +50,7 @@ class SummaryCard extends StatelessWidget {
                   children: [
                     Expanded(
                       flex: 3,
-                      child: Container(
+                      child: SizedBox(
                         width: double.maxFinite,
                         height: double.maxFinite,
                         child: Center(
@@ -69,7 +69,7 @@ class SummaryCard extends StatelessWidget {
                               SizedBox(
                                 height: Dimensions.getProportionalHeight(4),
                               ),
-                              Text('Annual Rent',
+                              const Text('Annual Rent',
                                   style: TextStyle(
                                     color: Colors.white,
                                     fontSize: 15,
@@ -87,7 +87,7 @@ class SummaryCard extends StatelessWidget {
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Text(
+                              const Text(
                                 'Expected cash back',
                                 style: TextStyle(
                                     fontSize: 16,
@@ -96,18 +96,19 @@ class SummaryCard extends StatelessWidget {
                               ),
                               Text(
                                 "\u20A6 ${value.format(20000)}",
-                                style: TextStyle(
+                                style: const TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w300,
                                     color: Colors.white),
                               ),
                             ],
                           ),
-                          Container(
-                              height: 40, child: VerticalDivider(color: lite)),
+                          SizedBox(
+                              height: 40,
+                              child: const VerticalDivider(color: lite)),
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.center,
-                            children: [
+                            children: const [
                               Text(
                                 'Month Used',
                                 style: TextStyle(
