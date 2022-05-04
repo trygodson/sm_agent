@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "612156037070",
+    "project_id": "dweller-e6b7d",
+    "storage_bucket": "dweller-e6b7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:612156037070:android:2e49eba3473922d6b67d9f",
+        "android_client_info": {
+          "package_name": "com.dweller"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "612156037070-ll8i3tte86lkuvnfsqg7h126k6923n9m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGIaLJgemcHWV1fKkdvucGgYCKf-74qfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "612156037070-ll8i3tte86lkuvnfsqg7h126k6923n9m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
