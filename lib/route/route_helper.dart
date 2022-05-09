@@ -1,5 +1,4 @@
 import 'package:get/get.dart';
-import 'package:dweller/screens/dashboard/index.dart';
 import 'package:dweller/screens/myhouse/index.dart';
 import 'package:dweller/screens/splash_screen.dart';
 

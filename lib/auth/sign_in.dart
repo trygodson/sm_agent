@@ -36,8 +36,8 @@ class _SignInPageState extends State<SignInPage> {
   void initState() {
     super.initState();
 
-    messaging = FirebaseMessaging.instance;
-    messaging.getToken().then((value) => fcmToken = value.toString());
+    // messaging = FirebaseMessaging.instance;
+    // messaging.getToken().then((value) => fcmToken = value.toString());
   }
 
   @override

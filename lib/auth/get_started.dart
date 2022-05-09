@@ -1,3 +1,4 @@
+import 'package:dweller/screens/home_search/home_search_start.dart';
 import 'package:flutter/material.dart';
 import 'package:dweller/auth/sign_in.dart';
 import 'package:dweller/auth/sign_up.dart';
@@ -18,12 +19,20 @@ class _GetStartedPageState extends State<GetStartedPage> {
       backgroundColor: appBgColor,
       body: ListView(
         children: [
-          const Padding(
-            padding: EdgeInsets.fromLTRB(38, 170, 38, 10),
-            child: Text(
-              'Realty under your Control',
-              textAlign: TextAlign.center,
-              style: GlobalStyle.titleStyle,
+          Padding(
+            padding: const EdgeInsets.fromLTRB(38, 170, 38, 10),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const HomeSearchStart()));
+              },
+              child: const Text(
+                'Realty under your Control',
+                textAlign: TextAlign.center,
+                style: GlobalStyle.titleStyle,
+              ),
             ),
           ),
           Padding(

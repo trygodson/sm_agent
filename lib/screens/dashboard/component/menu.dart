@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:get/get.dart';
 
-import 'package:intl/intl.dart';
 import 'package:dweller/theme/color.dart';
 import 'package:dweller/widgets/menu_card.dart';
 
@@ -30,12 +29,13 @@ class Menu extends StatelessWidget {
               numOfitem: 3,
               press: () => Get.toNamed('/myhouse')),
           GridCard(
-              color: pink,
-              icon: FontAwesomeIcons.search,
-              text: 'House Search',
-              description:
-                  'Raphael is an AI that helps you find a house of your choice',
-              press: () => null),
+            color: pink,
+            icon: FontAwesomeIcons.search,
+            text: 'House Search',
+            description:
+                'Raphael is an AI that helps you find a house of your choice',
+            press: () => null,
+          ),
           const GridCard(
               color: purple,
               icon: FontAwesomeIcons.mapMarkerAlt,
