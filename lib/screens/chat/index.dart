@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/screens/chat/chat.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/screens/chat/chat.dart';
+import 'package:dweller/theme/color.dart';
 
 class ChatScreen extends StatefulWidget {
   const ChatScreen({Key? key}) : super(key: key);
@@ -12,9 +12,9 @@ class ChatScreen extends StatefulWidget {
 class _ChatScreenState extends State<ChatScreen> {
   int _selectedIndex = 0;
   List pages = [
-    ChatPage(),
+    const ChatPage(),
     Container(
-      child: Center(
+      child: const Center(
         child: Text('group chats'),
       ),
     )
@@ -38,7 +38,7 @@ class _ChatScreenState extends State<ChatScreen> {
         showUnselectedLabels: false,
         currentIndex: _selectedIndex,
         onTap: onTapNav,
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(
               Icons.chat,

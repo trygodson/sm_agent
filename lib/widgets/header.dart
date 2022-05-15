@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/dimensions.dart';
-import 'package:smart_agent/utils/global_style.dart';
-import 'package:smart_agent/widgets/icon_with_counter.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/dimensions.dart';
+import 'package:dweller/utils/global_style.dart';
+import 'package:dweller/widgets/icon_with_counter.dart';
 
 class Header extends StatelessWidget {
   const Header({
@@ -36,7 +36,7 @@ class Header extends StatelessWidget {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     "Howdy Pelomo",
                     style: GlobalStyle.h2Style,
                   ),
@@ -51,10 +51,10 @@ class Header extends StatelessWidget {
                         color: primary,
                         size: Dimensions.getProportionalHeight(15),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 5,
                       ),
-                      Text(
+                      const Text(
                         "Lugbe, Nigeria",
                         style: GlobalStyle.subTextStyle,
                       ),

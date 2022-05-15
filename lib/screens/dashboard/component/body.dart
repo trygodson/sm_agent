@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/screens/dashboard/component/projects_vertical.dart';
-import 'package:smart_agent/utils/dimensions.dart';
+import 'package:dweller/screens/dashboard/component/projects_vertical.dart';
+import 'package:dweller/utils/dimensions.dart';
 
 import 'finance_widget.dart';
 import '../../../widgets/header.dart';
@@ -22,7 +22,7 @@ class Body extends StatelessWidget {
           // const SummaryCard(
           //   amount: 1000000,
           // ),
-          Menu(),
+          const Menu(),
 
           ProjectVertical()
         ],

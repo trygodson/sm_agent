@@ -1,4 +1,4 @@
-name: smart_agent
+name: dweller
 description: A new Flutter project.
 
 publish_to: 'none' 
@@ -23,6 +23,7 @@ dependencies:
   flutter_svg: ^0.22.0
   pin_code_fields: 7.3.0
   intl: ^0.17.0
+  firebase_messaging: ^11.2.15
 
 
 

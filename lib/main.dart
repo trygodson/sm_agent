@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:smart_agent/route/route_helper.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/theme/theme.dart';
+import 'package:dweller/route/route_helper.dart';
+import 'package:dweller/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'Smart Agent',
+      title: 'Dweller',
       debugShowCheckedModeBanner: false,
       themeMode: ThemeMode.light,
       darkTheme: AppTheme.darkTheme,

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/theme/color.dart';
 
 class CustomImage extends StatelessWidget {
   const CustomImage(this.name,
@@ -34,7 +34,7 @@ class CustomImage extends StatelessWidget {
             color: shadowColor.withOpacity(0.1),
             spreadRadius: 1,
             blurRadius: 1,
-            offset: Offset(0, 1), // changes position of shadow
+            offset: const Offset(0, 1), // changes position of shadow
           ),
         ],
         image: DecorationImage(image: NetworkImage(name), fit: BoxFit.cover),

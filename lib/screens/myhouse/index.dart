@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/theme/color.dart';
 import 'component/body.dart';
 
 class MyHouse extends StatelessWidget {
@@ -7,7 +7,7 @@ class MyHouse extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       backgroundColor: appBgColor,
       body: Body(),
     );

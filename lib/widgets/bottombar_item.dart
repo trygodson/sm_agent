@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/dimensions.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/dimensions.dart';
 
 class BottomBarItem extends StatelessWidget {
   const BottomBarItem(this.icon, this.title,
@@ -25,7 +25,7 @@ class BottomBarItem extends StatelessWidget {
         alignment: Alignment.center,
         child: Stack(alignment: Alignment.center, children: <Widget>[
           Container(
-              padding: EdgeInsets.all(7),
+              padding: const EdgeInsets.all(7),
               decoration: BoxDecoration(
                 borderRadius:
                     BorderRadius.circular(Dimensions.getProportionalHeight(50)),

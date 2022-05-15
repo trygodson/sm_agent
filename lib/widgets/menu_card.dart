@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/dimensions.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/dimensions.dart';
 
 class GridCard extends StatelessWidget {
   const GridCard({
@@ -41,7 +41,7 @@ class GridCard extends StatelessWidget {
                       color: shadowColor.withOpacity(0.1),
                       spreadRadius: .5,
                       blurRadius: .5,
-                      offset: Offset(0, 1), // changes position of shadow
+                      offset: const Offset(0, 1), // changes position of shadow
                     ),
                   ],
                 ),
@@ -51,7 +51,7 @@ class GridCard extends StatelessWidget {
                         EdgeInsets.all(Dimensions.getProportionalWidth(12)),
                     height: Dimensions.getProportionalWidth(46),
                     width: Dimensions.getProportionalWidth(46),
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       // color: color.withOpacity(0.1),
                       shape: BoxShape.circle,
                     ),
@@ -62,12 +62,12 @@ class GridCard extends StatelessWidget {
                   ),
                   Text(text!,
                       textAlign: TextAlign.center,
-                      style: TextStyle(
+                      style: const TextStyle(
                           color: primary, fontWeight: FontWeight.bold)),
                   Text(
                     description!,
                     textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 8),
+                    style: const TextStyle(fontSize: 8),
                   )
                 ]),
               ),
@@ -97,7 +97,7 @@ class GridCard extends StatelessWidget {
                   ),
                 )
             ]),
-            SizedBox(height: 5),
+            const SizedBox(height: 5),
           ],
         ),
       ),

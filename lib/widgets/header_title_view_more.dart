@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/utils/dimensions.dart';
+import 'package:dweller/utils/dimensions.dart';
 
 class SectionTitle extends StatelessWidget {
   const SectionTitle({

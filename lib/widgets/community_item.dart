@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/theme/color.dart';
 
 import 'custom_image.dart';
 
 class CommunityItem extends StatelessWidget {
-  CommunityItem({
+  const CommunityItem({
     Key? key,
     required this.data,
   }) : super(key: key);
@@ -15,8 +15,8 @@ class CommunityItem extends StatelessWidget {
     return Container(
       width: 280,
       height: 190,
-      margin: EdgeInsets.only(right: 15),
-      padding: EdgeInsets.symmetric(horizontal: 10, vertical: 15),
+      margin: const EdgeInsets.only(right: 15),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
@@ -25,7 +25,7 @@ class CommunityItem extends StatelessWidget {
             color: shadowColor.withOpacity(0.1),
             spreadRadius: 1,
             blurRadius: 1,
-            offset: Offset(0, 1), // changes position of shadow
+            offset: const Offset(0, 1), // changes position of shadow
           ),
         ],
       ),
@@ -44,7 +44,7 @@ class CommunityItem extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   )),
-              SizedBox(
+              const SizedBox(
                 width: 15,
               ),
               Expanded(
@@ -55,15 +55,15 @@ class CommunityItem extends StatelessWidget {
                       data["name"],
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
-                      style:
-                          TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+                      style: const TextStyle(
+                          fontSize: 14, fontWeight: FontWeight.w600),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 5,
                     ),
                     Text(
                       data["title"],
-                      style: TextStyle(
+                      style: const TextStyle(
                           fontSize: 13,
                           color: primary,
                           fontWeight: FontWeight.w500),
@@ -75,7 +75,7 @@ class CommunityItem extends StatelessWidget {
           ),
           Text(
             data['detail'],
-            style: TextStyle(
+            style: const TextStyle(
               fontSize: 16,
               fontWeight: FontWeight.w600,
             ),

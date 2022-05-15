@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:smart_agent/screens/chatmessage/chatmessage.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/screens/chatmessage/chatmessage.dart';
+import 'package:dweller/theme/color.dart';
 
 class ChatPage extends StatelessWidget {
   const ChatPage({Key? key}) : super(key: key);
@@ -12,22 +12,22 @@ class ChatPage extends StatelessWidget {
     body() {
       return SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(vertical: 12),
+          padding: const EdgeInsets.symmetric(vertical: 12),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
+                    const Text(
                       'Message',
                       style:
                           TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                     ),
                     FlatButton(
-                        child: Icon(
+                        child: const Icon(
                           Icons.mode_edit,
                           color: primary,
                           size: 32,
@@ -36,9 +36,9 @@ class ChatPage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: TextField(
                     decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -57,20 +57,20 @@ class ChatPage extends StatelessWidget {
                   ),
                 )),
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                child: Text(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: const Text(
                   'People Close By',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
               ),
-              SizedBox(height: 25),
-              Container(
+              const SizedBox(height: 25),
+              SizedBox(
                 height: 115,
                 child: ListView(
                   scrollDirection: Axis.horizontal,
-                  children: [
+                  children: const [
                     UserWidget(
                       family: 'Selma',
                       pic: 'user1.jpg',
@@ -94,18 +94,18 @@ class ChatPage extends StatelessWidget {
                   ],
                 ),
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               Container(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                child: Text(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: const Text(
                   'Messages',
                   style: TextStyle(fontWeight: FontWeight.bold),
                 ),
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               Expanded(
                 child: Container(
-                  padding: EdgeInsets.symmetric(horizontal: 7),
+                  padding: const EdgeInsets.symmetric(horizontal: 7),
                   child: ListView(
                     children: [
                       MessageWidget(
@@ -178,20 +178,20 @@ class MessageWidget extends StatelessWidget {
     return GestureDetector(
       onTap: ontap,
       child: Container(
-        margin: EdgeInsets.symmetric(vertical: 15),
+        margin: const EdgeInsets.symmetric(vertical: 15),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.all(3),
-              margin: EdgeInsets.symmetric(horizontal: 10),
+              padding: const EdgeInsets.all(3),
+              margin: const EdgeInsets.symmetric(horizontal: 10),
               decoration: BoxDecoration(
                 color: primary,
                 borderRadius: BorderRadius.circular(45),
               ),
               child: Container(
                 child: Container(
-                  padding: EdgeInsets.all(2),
+                  padding: const EdgeInsets.all(2),
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(45),
@@ -202,23 +202,23 @@ class MessageWidget extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: lite,
                         borderRadius: BorderRadius.circular(45),
-                        image: DecorationImage(
+                        image: const DecorationImage(
                             image: NetworkImage(
                                 'https://avatars.githubusercontent.com/u/86506519?v=4'))),
                   ),
                 ),
               ),
             ),
-            SizedBox(width: 10),
+            const SizedBox(width: 10),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('$family',
-                      style: TextStyle(fontWeight: FontWeight.bold)),
-                  SizedBox(height: 10),
+                  Text(family,
+                      style: const TextStyle(fontWeight: FontWeight.bold)),
+                  const SizedBox(height: 10),
                   Text(
-                    '$msg',
+                    msg,
                     style: TextStyle(
                         fontSize: 13, color: Colors.grey.shade700, height: 1.5),
                   )
@@ -228,20 +228,20 @@ class MessageWidget extends StatelessWidget {
             Column(
               children: [
                 Text(
-                  '$time',
+                  time,
                   style: TextStyle(
                       fontSize: 12,
                       color: count == 0 ? primary.withOpacity(0.7) : primary),
                 ),
-                SizedBox(height: 10),
-                this.count == 0
+                const SizedBox(height: 10),
+                count == 0
                     ? Container()
                     : CircleAvatar(
                         radius: 15,
                         backgroundColor: primary,
                         child: Text(
                           '$count',
-                          style: TextStyle(color: Colors.white),
+                          style: const TextStyle(color: Colors.white),
                         ),
                       )
               ],
@@ -265,15 +265,15 @@ class UserWidget extends StatelessWidget {
     return Column(
       children: [
         Container(
-          padding: EdgeInsets.all(3),
-          margin: EdgeInsets.symmetric(horizontal: 10),
+          padding: const EdgeInsets.all(3),
+          margin: const EdgeInsets.symmetric(horizontal: 10),
           decoration: BoxDecoration(
             color: primary,
             borderRadius: BorderRadius.circular(45),
           ),
           child: Container(
             child: Container(
-              padding: EdgeInsets.all(2),
+              padding: const EdgeInsets.all(2),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(45),
@@ -283,7 +283,7 @@ class UserWidget extends StatelessWidget {
                 width: 55,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(45),
-                    image: DecorationImage(
+                    image: const DecorationImage(
                         image: NetworkImage(
                       'https://avatars.githubusercontent.com/u/86506519?v=4',
                     ))),
@@ -291,10 +291,10 @@ class UserWidget extends StatelessWidget {
             ),
           ),
         ),
-        SizedBox(height: 15),
+        const SizedBox(height: 15),
         Text(
-          '$family',
-          style: TextStyle(fontWeight: FontWeight.bold),
+          family,
+          style: const TextStyle(fontWeight: FontWeight.bold),
         )
       ],
     );

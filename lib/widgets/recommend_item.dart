@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
+import 'package:dweller/theme/color.dart';
 
 import 'custom_image.dart';
 
 class RecommendItem extends StatelessWidget {
-  RecommendItem({Key? key, required this.data}) : super(key: key);
+  const RecommendItem({Key? key, required this.data}) : super(key: key);
   final data;
 
   @override
@@ -12,7 +12,7 @@ class RecommendItem extends StatelessWidget {
     return Container(
         width: 220,
         height: 130,
-        margin: EdgeInsets.only(right: 15),
+        margin: const EdgeInsets.only(right: 15),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
@@ -20,7 +20,7 @@ class RecommendItem extends StatelessWidget {
               color: shadowColor.withOpacity(0.1),
               spreadRadius: 1,
               blurRadius: 1,
-              offset: Offset(0, 1), // changes position of shadow
+              offset: const Offset(0, 1), // changes position of shadow
             ),
           ],
         ),
@@ -55,27 +55,27 @@ class RecommendItem extends StatelessWidget {
                     data["name"],
                     maxLines: 1,
                     overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
+                    style: const TextStyle(
                         color: Colors.white,
                         fontSize: 14,
                         fontWeight: FontWeight.w600),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.place_outlined,
                         color: Colors.white,
                         size: 13,
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 3,
                       ),
                       Text(
                         data["location"],
-                        style: TextStyle(
+                        style: const TextStyle(
                           fontSize: 13,
                           color: Colors.white,
                         ),

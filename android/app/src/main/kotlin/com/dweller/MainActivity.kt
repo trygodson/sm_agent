@@ -1,4 +1,4 @@
-package com.example.smart_agent
+package com.dweller
 
 import io.flutter.embedding.android.FlutterActivity
 

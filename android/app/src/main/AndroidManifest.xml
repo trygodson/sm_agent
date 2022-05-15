@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.smart_agent">
+    package="com.dweller">
    <application
-        android:label="smart_agent"
+        android:label="Dweller"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

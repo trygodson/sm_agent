@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:smart_agent/theme/color.dart';
-import 'package:smart_agent/utils/global_style.dart';
+import 'package:dweller/theme/color.dart';
+import 'package:dweller/utils/global_style.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
   const ForgotPasswordPage({Key? key}) : super(key: key);
